@@ -1,0 +1,25 @@
+<section class="sideBar ">
+<div class="w-100 d-flex justify-content-center py-3">
+  <img src="/assets/imgs/icon.png" class="w-75" alt="">
+</div>
+<ul class="px-3 mt-3 ">
+  <li class="border rounded bg-white p-1" >
+    <a class="d-flex gap-3  align-items-center " [routerLink]="['/statistics']" routerLinkActive="router-link-active" >
+      <img src="/assets/imgs/Graph 1.svg" alt="">
+      <span class="item " >{{'dashboard.statistics'|translate}}</span>
+    </a>
+  </li>
+   <li class="mt-3" >
+    <a class="d-flex gap-3  align-items-center"  routerLinkActive="active">
+      <img src="/assets/imgs/Mask group.svg"  alt="">
+      <span class="item ">{{'dashboard.clients'|translate}}</span>
+    </a>
+  </li>
+   <li class="mt-3">
+    <a class="d-flex gap-3  align-items-center">
+      <img src="/assets/imgs/Chart_Line.svg" alt="">
+      <span class="item ">{{'dashboard.sales'|translate}}</span>
+    </a>
+  </li>
+</ul>
+</section>

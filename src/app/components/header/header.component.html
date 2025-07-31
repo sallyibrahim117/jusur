@@ -1,0 +1,28 @@
+<div class="border-0 head" style="height: 50px;">
+
+  <div class="row">
+
+  <div class="col-8">
+
+    <h5 class="fw-medium text-capitalize title h-100 d-flex align-items-center ps-3">{{'info.hello' |translate}}</h5>
+  </div>
+  <div class="col-2">
+
+    <ng-container>
+
+      @if(language()=='ar'){
+         <a title="language" class="fw-bold h-100 d-flex align-items-center justify-content-center" (click)="changeLanguage('en')">English</a>
+         }@else{
+         <a title="language" class="fw-bold" (click)="changeLanguage('ar')">العربية</a>
+         }
+    </ng-container>
+  </div>
+  <div class="col-2">
+  <h6 class="text-capitalize">{{'info.name'|translate}}</h6>
+  <small class="text-capitalize admn m-0 ">{{'info.admin'|translate}}</small>
+  </div>
+
+  </div>
+</div>
+
+

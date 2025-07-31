@@ -1,0 +1,84 @@
+
+<button class="btn but-success p-1 text-light m-5">
+
+  @if(language()=='ar'){
+      <a title="language" class="fw-bold" (click)="changeLanguage('en')">English</a>
+      }@else{
+      <a title="language" class="fw-bold" (click)="changeLanguage('ar')">العربية</a>
+      }
+</button>
+
+
+
+
+
+<div class="container ">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class=" h-100 p-5 card border-0">
+        <div class="text-center">
+
+          <h4 class="login-title">{{ 'auth.login' | translate }}</h4>
+          <p class="sm-content">{{ 'auth.welcomeBack' | translate }}</p>
+        </div>
+        <form  [formGroup]="myForm"  (ngSubmit)="submit()">
+           <div class="mb-3">
+
+      <input type="text" class="form-control border-0" id="mobileNum"
+      placeholder="{{ 'auth.enterPhoneOrId' | translate }}"
+      formControlName="phone"
+      [class.is-invalid]="
+             formControlls['phone'].invalid &&
+             formControlls['phone'].touched
+           "
+      >
+          <ng-container
+           *ngIf="
+             formControlls['phone'].invalid &&
+             formControlls['phone'].touched &&
+             formControlls['phone'].errors
+           "
+         >
+           <small class="text-danger" *ngIf="formControlls['phone'].errors"
+              style="
+    font-size: 12px;">phone or Phone is required
+           </small>
+           </ng-container>
+    </div>
+           <div class="mb-3">
+
+      <input type="password" class="form-control border-0" id="exampleInputPassword1"
+      placeholder="{{ 'auth.enterPassword' | translate }}"
+      formControlName="password"
+      [class.is-invalid]="
+             formControlls['password'].invalid &&
+             formControlls['password'].touched
+           "
+      >
+       <ng-container
+           *ngIf="
+             formControlls['password'].invalid &&
+             formControlls['password'].touched &&
+             formControlls['password'].errors
+           "
+         >
+           <small class="text-danger" *ngIf="formControlls['password'].errors"
+              style="
+    font-size: 12px;">enter your password
+           </small>
+
+         </ng-container>
+    </div>
+    <button class="btn w-100 start-btn text-white mt-2" (click)="login()">{{ 'auth.start' | translate }}</button>
+    <p class="para text-center mt-3">{{"auth.loginToAccess"|translate}}</p>
+        </form>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class=" gradient-bg d-flex align-items-center justify-content-center">
+        <img src="/assets/imgs/icon.png" class="w-50" alt="">
+      </div>
+    </div>
+  </div>
+</div>

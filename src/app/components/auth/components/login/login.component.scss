@@ -1,0 +1,30 @@
+.gradient-bg{
+    background: linear-gradient(to right, #0A2527, #287676);
+    height: 50vh;
+}
+.but-success{
+  background-color: #287676;
+  a{
+    color: white;
+  }
+}
+.login-title{
+  color: #2C8385;
+}
+.sm-content{
+  color: #868686;
+}
+input{
+  background-color: #F2F7FA;
+
+}
+input::placeholder {
+  color: #8C95A3;
+  font-size: 12px;
+}
+.start-btn{
+  background-color: #359A9C;
+}
+.para{
+  font-size: 13px;
+}

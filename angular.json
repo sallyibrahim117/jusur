@@ -29,10 +29,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [ "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "node_modules/primeng/resources/themes/lara-light-indigo/theme.css",
+  "node_modules/primeng/resources/primeng.min.css",
+  "node_modules/primeicons/primeicons.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts":  ["./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+            "./node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -97,5 +101,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "61d5bae7-7c51-4ca6-8e68-6414a1b29683"
   }
 }

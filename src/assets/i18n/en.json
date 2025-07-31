@@ -1,0 +1,52 @@
+{
+
+
+"auth":{
+
+  "login":"Login",
+    "welcomeBack": "Welcome back, we missed you",
+     "enterPhoneOrId": "Enter mobile number or ID",
+    "enterPassword": "Enter your password",
+     "start": "Start",
+      "loginToAccess": "Log in to get the permissions you need"
+  }
+  ,
+  "dashboard":{
+       "statistics": "Statistics",
+    "sales": "Sales",
+    "messages": "Messages",
+    "products": "Products",
+    "settings": "Settings",
+    "clients":"Clients"
+  }
+  ,
+  "info":
+  {
+  "hello": "Hello Sally",
+  "name": "Sally",
+
+  "admin": "Admin",
+
+  "welcomeBack": "Welcome back again, sally the project manager!",
+
+  "pageIntro": "This page is designed to provide some important information about the site. Let's create something together!"
+}
+
+,
+  "chart": {
+    "title": "Total Revenue",
+    "labels": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "value1": "25K" ,
+     "value2" :"20k",
+     "value3":"15k",
+     "value4":"10k",
+     "value5":"5k",
+         "online": "Online Sales",
+    "offline": "Offline Sales"
+,  "totalRevenue": "Total Revenue"
+  }
+
+
+
+  }
+

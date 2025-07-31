@@ -1,0 +1,15 @@
+.sideBar{
+  position: fixed;
+border-radius: 5px;
+width: 240px;
+min-height: 98vh;
+
+  background: linear-gradient(to bottom,  #0A2527EB ,#287676 );;
+}
+.item{
+  color: #359A9C;
+}
+.active{
+background: white;
+border: 1px solid;
+}
