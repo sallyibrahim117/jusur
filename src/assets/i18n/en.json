@@ -36,6 +36,7 @@
   "chart": {
     "title": "Total Revenue",
     "labels": ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "labels2": ["January", "February", "March", "April", "May", "June"],
     "value1": "25K" ,
      "value2" :"20k",
      "value3":"15k",
@@ -43,10 +44,26 @@
      "value5":"5k",
          "online": "Online Sales",
     "offline": "Offline Sales"
-,  "totalRevenue": "Total Revenue"
+,  "totalRevenue": "Total Revenue",
+"targetVsActual": "Target vs Actual",
+    "actualSales": "Actual Sales",
+    "globalSales": "Global Sales",
+    "targetedSales": "Targeted Sales",
+    "commercial": "Commercial",
+    "thisMonth": "This Month",
+    "lastMonth": "Last Month",
+    "customerSatisfaction": "Customer Satisfaction"
   }
 
-
+,
+  "project": {
+    "congrats": "Congratulations Yasser, Project Manager.",
+    "permission": "You are now authorized to perform additional operations."
+  }
+, "profile": {
+    "view": "View Profile",
+     "logout": "Logout"
+  }
 
   }
 

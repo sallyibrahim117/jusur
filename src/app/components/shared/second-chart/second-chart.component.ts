@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ChartModule } from "primeng/chart";
-
 @Component({
-  selector: 'app-chart',
+  selector: 'app-second-chart',
   standalone: true,
   imports: [ChartModule,TranslateModule],
-  templateUrl: './chart.component.html',
-  styleUrl: './chart.component.scss'
+  templateUrl: './second-chart.component.html',
+  styleUrl: './second-chart.component.scss'
 })
-export class ChartComponent {
-  data: any;
+export class SecondChartComponent {
+data: any;
   options: any;
 constructor(private tarnslate:TranslateService){}
   ngOnInit() {
@@ -20,29 +19,28 @@ constructor(private tarnslate:TranslateService){}
     const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
 
     this.tarnslate.get([
-  'chart.labels',
-  'chart.online',
-  'chart.offline'
+  'chart.labels2',
+
 ]).subscribe(trans => {
   this.data = {
-    labels: trans['chart.labels'],
+    labels: trans['chart.labels2'],
     datasets: [
       {
 
-        backgroundColor: documentStyle.getPropertyValue('--blue-500'),
-        borderColor: documentStyle.getPropertyValue('--blue-500'),
-        data: [25, 20, 15, 10, 5,12,2],
+        backgroundColor:'#27AE60',
+        borderColor:'#27AE60',
+        data: [65, 59, 80, 81, 56, 55, 40],
         barThickness: 12,
 barPercentage: 0.5,
         categoryPercentage:.5,
-          label: trans['chart.online'],
+
       },
       {
-        label: trans['chart.offline'],
-        backgroundColor: documentStyle.getPropertyValue('--green-500'),
-        borderColor: documentStyle.getPropertyValue('--green-500'),
-        data: [10, 15, 12, 8, 3,25,5,20],
 
+        backgroundColor: '#FFA412',
+        borderColor: '#FFA412',
+
+ data: [28, 48, 40, 19, 86, 27, 90],
 barPercentage: 0.5,
         categoryPercentage:.5
       }
@@ -55,7 +53,7 @@ barPercentage: 0.5,
     aspectRatio: 0.8,
     plugins: {
     legend: {
-       position: 'bottom',
+      display:false,
         labels: {
           color: textColor
         }
@@ -74,14 +72,8 @@ barPercentage: 0.5,
         }
       },
       y: {
-        stacked: false,
-        ticks: {
-          color: textColorSecondary
-        },
-        grid: {
-          color: surfaceBorder,
-          drawBorder: false
-        }
+        display:false,
+
       }
     }
   };

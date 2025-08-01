@@ -26,6 +26,7 @@ export class LanguageService {
     document.documentElement.dir = dir;
     document.documentElement.lang = lang;
   }
+
   // switchLang(lang: string) {
   //   const segments = this.router.url.split('/');
   //   segments[1] = lang; // Replace the locale segment

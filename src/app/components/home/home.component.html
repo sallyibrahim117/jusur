@@ -1,20 +1,21 @@
 <div class="container-fluid p-2 d-flex  bg-light">
 <!-- header -->
-<div class="row w-100">
-  <div class="col-2">
+
 
     <app-sidebar></app-sidebar>
-  </div>
-<div class="col-10">
+
+
+<div class="main-content">
 
   <app-header></app-header>
+  <router-outlet></router-outlet>
+</div>
   <!-- content of home -->
 
- <router-outlet></router-outlet>
 </div>
 
-</div>
 
-  </div>
+
+
 
 

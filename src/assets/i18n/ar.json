@@ -37,6 +37,7 @@
   "chart": {
     "title": "إجمالي الإيرادات",
     "labels": ["السبت", "الأحد", "الاثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة"],
+    "labels2": ["January", "February", "March", "April", "May", "June"],
     "value": "٢٥ ألف",
      "value2": "٢٠ ألف",
 "value3": "١٥ ألف",
@@ -44,11 +45,28 @@
 "value5": "٥ آلاف",
     "online": "المبيعات عبر الإنترنت",
     "offline": "المبيعات بدون الاتصال بالإنترنت"
-, "totalRevenue": "إجمالي الإيرادات"
+, "totalRevenue": "إجمالي الإيرادات",
+ "targetVsActual": "الهدف مقابل الواقع",
+    "actualSales": "المبيعات الواقعية",
+    "globalSales": "المبيعات العالمية",
+    "targetedSales": "المبيعات المستهدفة",
+    "commercial": "التجارية",
+      "thisMonth": "هذا الشهر",
+    "lastMonth": "الشهر الماضي",
+    "customerSatisfaction": "رضا العملاء"
   }
 
 
+,
+  "project": {
+    "congrats": "ألف مبروك ياسر، مدير المشروع.",
+    "permission": "لديك إذن للقيام بمزيد من العمليات."
+  }
 
+, "profile": {
+    "view": "عرض الملف الشخصي",
+     "logout": "تسجيل خروج"
+  }
 
 }
 

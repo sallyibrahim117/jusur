@@ -7,7 +7,7 @@ import { RouterModule } from "@angular/router";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SidebarComponent, HeaderComponent, StatisticsComponent, RouterModule],
+  imports: [SidebarComponent, HeaderComponent, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

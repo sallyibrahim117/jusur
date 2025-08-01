@@ -1,4 +1,4 @@
-<div class="row mt-4">
+<div class="row mt-4 ms-3">
   <div class="col-4">
 <div>
   <h6 class="fw-medium">{{ 'info.welcomeBack' | translate }}</h6>
@@ -7,14 +7,29 @@
 <div class="mt-5">
   <img class=" w-100 " src="/assets/imgs/Frame 20.svg" alt="">
 </div>
-<div class="card">
-  <div class="bg-white icon" >
+<div class="card p-3 mt-3">
 
-    <i class="pi pi-star"></i>
-  </div>
+<span class="w-100 d-flex justify-content-center ">
+
+  <i class="pi pi-star-fill icon bg-white rounded-circle d-flex justify-content-center align-items-center"></i>
+</span>
+<div class="text-white mt-3 d-flex flex-column align-items-center">
+
+  <h6 class="congrts fw-medium">{{'project.congrats'|translate}}</h6>
+  <small class="fw-normal">{{'project.permission'|translate}}</small>
+  <button class="btn btn-light mt-3">{{'profile.view'|translate}}</button>
+</div>
 </div>
   </div>
   <div class="col-8">
 <app-chart></app-chart>
+<div class="row">
+  <div class="col-6">
+<app-second-chart></app-second-chart>
+  </div>
+  <div class="col-6">
+<app-third-chart></app-third-chart>
+  </div>
+</div>
   </div>
 </div>
