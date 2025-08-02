@@ -1,9 +1,25 @@
 <div class="card border-0 mt-4">
     <p-chart type="line"  [data]="data" [options]="options" />
-    <div>
-      <div class="d-flex gap-3">
-        <img src="/assets/imgs/Group 18.svg" alt="">
-        <small class="text-secondary">{{'chart.lastMonth'|translate}}</small>
-      </div>
+    <div class="row">
+<div class="col-6">
+
+  <div >
+    <div class="d-flex gap-1 mt-3 client-chart position-relative">
+      <img src="/assets/imgs/Group 18.svg" alt="">
+      <small class="text-secondary">{{'chart.lastMonth'|translate}}</small>
+    </div>
+    <div class="text-center">3.003 {{'chart.currency_dollar'|translate}}</div>
+  </div>
+</div>
+
+<div class="col-6">
+  <div >
+    <div class="d-flex gap-1 mt-3 ">
+      <img src="/assets/imgs/Group 18 Copy.svg" alt="">
+      <small class="text-secondary">{{'chart.thisMonth'|translate}}</small>
+    </div>
+    <div class="text-center">4.504 {{'chart.currency_dollar'|translate}}</div>
+  </div>
+</div>
     </div>
 </div>

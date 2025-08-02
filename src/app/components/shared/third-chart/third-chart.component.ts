@@ -28,7 +28,8 @@ export class ThirdChartComponent {
                     fill: true,
                     tension: 0.4,
                     borderColor: '#05C283',
-                    background:'linear-gradient(to bottom , #05C283CC 100%)'
+
+                    background:'#d4efe6ff'
 
                 },
 
@@ -48,6 +49,7 @@ export class ThirdChartComponent {
             aspectRatio: 0.6,
             plugins: {
                 legend: {
+                  display:false,
                     labels: {
                         color: textColor
                     }

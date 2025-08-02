@@ -1,1 +1,8 @@
-
+.client-chart ::after{
+content:"";
+width: 1px;
+height: 20px;
+background-color: rgb(204, 200, 200);
+position: absolute;
+right: 1px;
+}

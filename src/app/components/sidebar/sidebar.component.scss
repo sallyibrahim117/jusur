@@ -7,9 +7,14 @@ min-height: 98vh;
   background: linear-gradient(to bottom,  #0A2527EB ,#287676 );;
 }
 .item{
-  color: #359A9C;
+  color:white
 }
-.active{
-background: white;
+li.active{
+background-color: white;
 border: 1px solid;
+color:  #359A9C !important;
+border-radius: 5px;
+}
+li.active .item {
+  color: #359A9C !important;
 }
