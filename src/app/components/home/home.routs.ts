@@ -11,5 +11,9 @@ export const homeChildrenRoutes: Routes = [
   {
     path: 'statistics',
     loadComponent: () => import('./components/statistics/statistics.component').then(c => c.StatisticsComponent),
+  },
+    {
+    path: 'clients',
+    loadComponent: () => import('./components/clients/clients.component').then(c => c.ClientsComponent),
   }
 ]
