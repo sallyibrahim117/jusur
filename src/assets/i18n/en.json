@@ -65,6 +65,11 @@
     "view": "View Profile",
      "logout": "Logout"
   }
+,
+ "client": {
+    "add": "Add Client",
+      "search": "Search by client name or phone number"
 
+  }
   }
 

@@ -1,1 +1,50 @@
-<p>clients works!</p>
+<div class="mt-4 ms-3 bg-light">
+  <div class="row align-items-center">
+<div class="col-4">
+
+  <h6>{{"dashboard.clients" |translate}}</h6>
+</div>
+<div class="col-2">
+
+  <button class="btn add-btn text-white">+ {{'client.add' |translate}}</button>
+</div>
+<div class="col-1">
+
+  <div class="p-1 bg-white d-flex gap-3 align-items-center">
+    <i class="pi pi-bars p-2"></i>
+    <i class="pi pi-objects-column"></i>
+
+  </div>
+</div>
+<div class="col-5">
+
+  <div class="position-relative">
+<i class="pi pi-search position-absolute"></i>
+    <input class="form-control me-2" type="search" [placeholder]="'client.search'|translate" aria-label="Search">
+  </div>
+</div>
+
+  </div>
+
+  <!-- dynamic table -->
+   <div class=" mt-4">
+    <p-table [columns]="cols" [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+        <ng-template pTemplate="header" let-columns>
+            <tr>
+                <th *ngFor="let col of columns">
+                    {{ col.header }}
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns">
+            <tr>
+                <td *ngFor="let col of columns">
+                    {{ rowData[col.field] }}
+                </td>
+                <!-- <button class="btn btn-light">details</button> -->
+            </tr>
+        </ng-template>
+    </p-table>
+</div>
+</div>
+
