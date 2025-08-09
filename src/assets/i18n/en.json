@@ -68,8 +68,19 @@
 ,
  "client": {
     "add": "Add Client",
-      "search": "Search by client name or phone number"
+      "search": "Search by client name or phone number",
+      "details":"Details"
 
+  }
+  ,
+  "table": {
+    "actions": "Actions",
+    "phoneNumber": "Phone Number",
+    "dateAdded": "Date Added",
+    "identity": "Identity",
+    "fullName": "Full Name",
+    "item":"sally",
+    "date":"02 Apr, 2025"
   }
   }
 

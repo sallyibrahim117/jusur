@@ -19,8 +19,8 @@ language=signal<string>('en')
       this.language.set(this.__LanguageService.getLanguage());
  }
  changeLanguage(lang: string): void {
+   localStorage.setItem(key.language, lang);
     this.__LanguageService.changeLang(lang);
-    localStorage.setItem(key.language, lang);
     window.location.reload();
 
 

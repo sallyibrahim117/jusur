@@ -12,8 +12,18 @@ export const homeChildrenRoutes: Routes = [
     path: 'statistics',
     loadComponent: () => import('./components/statistics/statistics.component').then(c => c.StatisticsComponent),
   },
+   {
+  path: 'clients',
+  children: [
     {
-    path: 'clients',
-    loadComponent: () => import('./components/clients/clients.component').then(c => c.ClientsComponent),
-  }
+      path: '',
+      loadComponent: () => import('./components/clients/clients.component').then(c => c.ClientsComponent),
+    },
+    {
+      path: 'details',
+      loadComponent: () => import('./components/clients/components/clients-details/clients-details.component').then(c => c.ClientsDetailsComponent),
+    }
+  ]
+}
+
 ]

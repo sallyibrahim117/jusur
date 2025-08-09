@@ -9,3 +9,25 @@
 .admn{
   font-size: 11px;
 }
+.add-btn{
+  background-color: #359A9C;
+}
+.pi-bars{
+ color: #5F5F5F;
+ background-color: #D9D9D942;
+}
+.pi-objects-column{
+  color: #5F5F5F66;
+}
+.pi-search{
+  left: 10px;
+  top: 11px;
+
+}
+input{
+    &::placeholder{
+    font-size: 12px;
+    padding-left: 20px;
+    padding-block: 2px
+  }
+}

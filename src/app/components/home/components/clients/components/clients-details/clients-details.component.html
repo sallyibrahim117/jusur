@@ -1,0 +1,36 @@
+
+<div class="container mt-4 d-lg-none d-md-block ">
+  <div class="row gy-2">
+    <ng-container *ngFor="let i of clients">
+  <div class=" col-md-6 col-12">
+
+      <div class="card p-2">
+        <h6 class="name text-capitalize fw-normal m-0">{{'table.fullName' |translate}}</h6>
+        <p class="text">{{(i?.item ??'')|translate}}</p>
+         <h6 class="name text-capitalize fw-normal m-0">{{'table.dateAdded' |translate}}</h6>
+        <p class="text">{{i?.DATEADDED??'' |translate}}</p>
+        <div class="d-flex justify-content-between">
+          <div>
+
+            <h6 class="name text-capitalize fw-normal m-0">{{'table.phoneNumber'|translate}}</h6>
+           <p class="text">{{i?.price}}</p>
+          </div>
+             <div>
+
+            <h6 class="name text-capitalize fw-normal m-0">{{'table.identity'|translate}}</h6>
+           <p class="text">{{i?.productid}}</p>
+          </div>
+        </div>
+        <hr class="m-1">
+        <div class="d-flex justify-content-start">
+
+          <button class="btn btn-details w-50 ">
+             {{'client.details'|translate}}
+           </button>
+        </div>
+      </div>
+    </div>
+    </ng-container>
+
+</div>
+</div>

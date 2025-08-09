@@ -25,6 +25,7 @@ export class LanguageService {
     const dir = window.localStorage.getItem(key.language) === "ar" ? "rtl" : "ltr";
     document.documentElement.dir = dir;
     document.documentElement.lang = lang;
+   // window.location.reload();
   }
 
   // switchLang(lang: string) {
@@ -55,7 +56,6 @@ export class LanguageService {
   }
 
   getLanguage(): string {
-    const segments = this.router.url.split('/');
     return localStorage?.getItem(key.language) || 'en';
   }
 

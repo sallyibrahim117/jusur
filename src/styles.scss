@@ -84,6 +84,26 @@ input:checked {
     padding-right: 0.75rem;
     background-position: left calc(0.375em + 0.1875rem) center;
   }
+
+  .main-content{
+margin-left: 0 !important;
+margin-right: 240px;
+  }
+  .ms-3{
+    margin-left: 0 !important;
+    margin-right: 1rem ;
+  }
+  .justify-content-start{
+    justify-content: end !important;
+  }
+  table {
+  direction: rtl;
+  text-align: right;
+}
+td{
+direction: rtl;
+  text-align: right;
+}
 }
 
 [dir="ltr"] {
